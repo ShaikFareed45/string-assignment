@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Create a program that checks if one string is a rotation of another. For instance,
+"waterbottle" is a rotation of "erbottlewat.
+    <script>
+        let str = "waterbottle"
+        let store = ""
+       for(i=3;i<str.length;i++){
+            store=store+str[i]
+        }
+        store+=str.substring(0,3)
+        console.log(store)
+    </script>
+</body>
+</html>
