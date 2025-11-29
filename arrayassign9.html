@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    9. Rotate the elements of an array to the right by a specified number of positions.
+    <script>
+        let arr = [1,2,3,4,5,6]
+        let num = 4
+        let store = []
+        for(i=arr.length-num;i<arr.length;i++){
+            store.push(arr[i])
+        }
+        for(i=0;i<arr.length-num;i++){
+         store.push(arr[i])
+     }
+     console.log(store)
+    </script>
+ </body>
+ </html>

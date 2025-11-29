@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Write a program to separate even and odd numbers into two different arrays
+    <script>
+        let num = [1,2,3,4,5,6,7,8,9,10]
+        let even = []
+        let odd = []
+        for(i=0;i<num.length;i++){
+            if(num[i]%2===0){
+                even.push(num[i])
+            }
+            else{
+                odd.push(num[i])
+            }
+        }
+        console.log(even,odd)
+    </script>
+</body>
+</html>
