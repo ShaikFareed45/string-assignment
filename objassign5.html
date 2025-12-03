@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Task - 5: WAP to generate 10 digit alpha-numeric coupon
+<script>
+    const char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+    let store = ''
+    for(i=0;i<10;i++){
+        store+=char[Math.trunc(Math.random()*char.length)]
+    }
+    console.log(store)
+</script>
+</body>
+</html>

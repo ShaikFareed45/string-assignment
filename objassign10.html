@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Task -10: WAP to return the first and last day of the current month.
+    <script>
+        const firstday = '2025-12-01'
+        const lastday = '2025-12-31'
+        const dte = new Date(firstday)
+        const dte1 = new Date(lastday)
+        let days = [
+        'sunday',
+        'monday',
+        'tuesday',
+        'wednesday',
+        'thursday',
+        'friday',
+        'saturday',
+        ]
+        day = dte.getDay()
+        day1 = dte1.getDay()
+        console.log(` First day of Current Month is ${days[day]}`)
+        console.log(` First day of Current Month is ${days[day1]}`)
+    </script>
+</body>
+</html>

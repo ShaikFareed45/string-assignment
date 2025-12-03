@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Task 3: Using compare operator compare 2 objects and return true or false
+accordingly.
+<script>
+    const obj=[
+    { a: 1, b: 2 },
+    { a: 1, b: 2 }
+    ]
+    for(i=0;i<obj.length-1;i++){
+        if(obj[i+1].a == obj[i].a && obj[i+1].b == obj[i].b){
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+    }
+</script>
+</body>
+</html>

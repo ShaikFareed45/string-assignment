@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Task - 7: Return the day of the week for a given date.
+    Example:
+     Input: “2024-11-18”
+    Output: Monday
+    <script>
+        const date = '2024-11-18'
+        const dte = new Date(date)
+        let days = [
+        'sunday',
+        'monday',
+        'tuesday',
+        'wednesday',
+        'thursday',
+        'friday',
+        'saturday',
+        ]
+        day = dte.getDay()
+        console.log(days[day])
+        
+    </script>
+</body>
+</html>
