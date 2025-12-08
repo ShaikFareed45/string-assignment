@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+ section{
+    background-color: black;
+    height: 65px;
+    display: flex;
+}
+section div{
+    color: white;
+    align-content: center;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 70px;
+    flex: 7;
+}
+section  ul{
+    display: flex;
+    color: white;
+    flex: 5;
+    gap: 50px;
+    font-size: 18px;
+    list-style: none;
+}
+#home{
+    color: orangered;
+}
+img{
+    width: 100%;
+    height: 85vh;
+  position: absolute;
+  z-index: -1;
+}
+.arr{
+    position: relative;
+}
+.arrange{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 200px;
+    color: rgb(2, 2, 2);
+}
+    </style>
+</head>
+<body>
+    <script>
+        const section = document.createElement("section")
+        const div = document.createElement("div")
+        const h1Tag = document.createElement("h1")
+        const ul = document.createElement("ul")
+        const li = document.createElement("li")
+        const title = document.createTextNode("My Website")
+        const hme = document.createTextNode("Home")
+        const about = document.createTextNode("About")
+        const service = document.createTextNode("Service")
+        const contact = document.createTextNode("Contact")
+        const body = document.querySelector("body")
+        body.appendChild(section) 
+        cloneLi = li.cloneNode("li")
+        cloneLi.setAttribute("id","home")
+        cloneLi1 = li.cloneNode("li")
+        cloneLi2 = li.cloneNode("li")
+        cloneLi3 = li.cloneNode("li")
+        section.appendChild(div)
+        div.appendChild(h1Tag)
+        h1Tag.appendChild(title)
+        section.appendChild(ul)
+        ul.appendChild(cloneLi)
+        ul.appendChild(cloneLi1)
+        ul.appendChild(cloneLi2)
+        ul.appendChild(cloneLi3)
+        cloneLi.appendChild(hme)
+        cloneLi1.appendChild(about)
+        cloneLi2.appendChild(service)
+        cloneLi3.appendChild(contact)
+        console.log(section)
+
+        const img = document.createElement("img")
+        const div1 = document.createElement("div")
+        img.setAttribute("src","https://cdn.pixabay.com/photo/2016/11/29/06/18/home-office-1867761_1280.jpg")
+        div1.appendChild(img)
+        const div2 = document.createElement("div")
+        div1.setAttribute("class","arr")
+        div1.appendChild(div2)
+        const title3 = document.createElement("h1")
+        title3.setAttribute("class","all")
+        const content=document.createTextNode("Welcome To My Website")
+        title3.appendChild(content)
+        const para2 = document.createElement("p")
+        para2.setAttribute("class","all1")
+        const pcontent=document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae vero autem amet iste quis omnis.?")
+        title3.appendChild(content)
+        para2.appendChild(pcontent)
+        div2.appendChild(title3)
+        div2.appendChild(para2)
+        div2.setAttribute("class","arrange")
+        body.appendChild(div1)
+        console.log(body)
+    </script>
+</body>
+</html>
