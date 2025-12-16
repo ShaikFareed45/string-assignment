@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid;
+            height: 50px;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 5.) Track and display the mouse's current X and Y coordinates as the user moves the
+mouse over a <div>. -->
+    <div>
+        
+    </div>
+    <script>
+        const div = document.querySelector("div")
+        div.addEventListener("mouseenter",(e)=>{
+            div.textContent = `x:axis ${e.x} and y:axis ${e.y}`
+        })
+    </script>
+</body>
+</html>

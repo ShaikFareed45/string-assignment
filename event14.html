@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            opacity: 100;
+        }
+    </style>
+</head>
+<body>
+    <!-- 14.) Once the user clicks a button, disable it and display a message that the button has
+been clicked.
+ -->
+<button>Click TO Disable</button>
+<span></span>
+<script>
+    const btn = document.querySelector("button")
+    const span = document.querySelector("span")
+    btn.addEventListener("click",(e)=>{
+        btn.style.opacity = "0"
+        span.textContent= "button has been clicked"
+    })
+</script>
+</body>
+</html>

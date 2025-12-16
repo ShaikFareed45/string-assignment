@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 150px;
+            width: 150px;
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 11.) Change an image to another when the user hovers over it and revert to the original
+image when the user stops hovering.
+ -->
+    <img src="https://yt3.googleusercontent.com/s5hlNKKDDQWjFGzYNnh8UeOW2j2w6id-cZGx7GdAA3d5Fu7zEi7ZMXEyslysuQUKigXNxtAB=s900-c-k-c0x00ffffff-no-rj">
+<script>
+    const imgTag = document.querySelector("img")
+    imgTag.addEventListener("mouseenter",()=>{
+        imgTag.src = "https://www.imagineonline.store/cdn/shop/files/iPhone_16_Plus_Pink_PDP_Image_Position_1__en-IN_d10aa447-6a42-4539-ba1c-f80387ffaf5c.jpg?v=1759210333&width=1445"
+    })
+    imgTag.addEventListener("mouseleave",()=>{
+        imgTag.src = "https://yt3.googleusercontent.com/s5hlNKKDDQWjFGzYNnh8UeOW2j2w6id-cZGx7GdAA3d5Fu7zEi7ZMXEyslysuQUKigXNxtAB=s900-c-k-c0x00ffffff-no-rj"
+    })
+</script>
+</body>
+</html>

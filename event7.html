@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid;
+            height: 50px;
+        }
+        p{
+            opacity: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 7.) When the user hovers over a <div>, display some hidden text. Hide the text when
+        the user stops hovering. -->
+        <div>
+            <p>hello dom</p>
+        </div>
+        <script>
+            const div = document.querySelector("div")
+            const p = document.querySelector("p")
+            div.addEventListener("mouseenter",()=>{
+                p.style.opacity="100"
+            })
+            div.addEventListener("mouseleave",()=>{
+                p.style.opacity="0"
+            })
+        </script>
+</body>
+</html>

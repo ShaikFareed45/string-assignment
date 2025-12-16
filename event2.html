@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    2.) How do you create and remove an element in dom?
+
+    <script>
+// creating elemnt and showing in dom 
+        const ele = document.createElement("h1")
+        const bdy = document.querySelector("body")
+        ele.textContent = "hello dom"
+        bdy.appendChild(ele)
+
+// removing elemnt from dom
+        ele.remove()
+    </script>
+</body>
+</html>

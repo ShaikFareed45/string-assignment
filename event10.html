@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    10.) When the user types in an input field, automatically convert the text to uppercase.
+
+    <input type="text">
+    <script>
+const inp = document.querySelector("input")
+inp.addEventListener("keyup",(e)=>{
+    inp.value = inp.value.toUpperCase()
+})
+
+    </script>
+</body>
+</html>
